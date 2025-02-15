@@ -1,0 +1,18 @@
+<div>
+	<form action='/' method='POST'>
+		<input
+			type='text'
+			name='url'
+			placeholder='URL'
+		/>
+		<input type='submit' value='Submit' />
+	</form>
+
+  {{#if timeTaken}}
+    Time taken: {{timeTaken}} ms
+  {{/if}}
+
+  {{#if image}}
+	  <img src='{{image}}' alt='image' style='width: 100%; height: auto;' />
+  {{/if}}
+</div>
